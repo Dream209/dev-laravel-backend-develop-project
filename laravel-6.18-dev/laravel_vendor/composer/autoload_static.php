@@ -402,7 +402,7 @@ class ComposerStaticInit8dcade7cc7485cd3b8339cbe257ba44d
         ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' .APP_DIR2. '/app',		#加载app下面的类
         ),
     );
 
