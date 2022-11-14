@@ -42,7 +42,7 @@ const APP_DIR2 = '/app_web';
 |
 */
 
-require __DIR__.'/../../laravel_vendor/autoload.php';
+require __DIR__.'/../laravel_vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -61,7 +61,7 @@ require __DIR__.'/../../laravel_vendor/autoload.php';
 */
 
 //step1 注册加载composer自动生成的class loader就是加载初始化第三方依赖，不属于laravel核心，到此为止
-$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once __DIR__.'/../'.APP_DIR2.'/bootstrap/app.php';
 
 //echo '<pre>';
 //var_dump($app);exit;

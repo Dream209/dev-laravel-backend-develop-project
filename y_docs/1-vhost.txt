@@ -1,0 +1,21 @@
+
+#8082 laravel-backend-dev
+server {
+        listen       8082;
+        server_name  ts.dev-ts.net;
+        location / {
+			root   E:/w_www/w_dev_work0755/dev_work0755/dev-laravel-backend-develop-project-fre/v1.0/app_web/public;
+            index  index.html index.htm index.php;
+			if ( !-e $request_filename) {
+				rewrite ^/(.*)$  /index.php?s=/$1  last;
+				break;
+			} 
+        }
+        location ~ \.php$ {
+            root           E:/w_www/w_dev_work0755/dev_work0755/dev-laravel-backend-develop-project-fre/v1.0/app_web/public;
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+}
