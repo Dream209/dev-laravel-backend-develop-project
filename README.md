@@ -1,7 +1,14 @@
-# dev-laravel-backend-fre
+# dev-laravel-backend-develop-project-fre
 
-1、laravel 开发包，下载下来直接使用，不需要再 composer； <br/>
-2、支持多项目方式，多个项目共用一个 vender; <br/>
-3、封装一个小工具，方便使用。 <br/>
+Laravel 框架可开发版
 
 
+框架主要内容包含：
+
+1、基于Laravel6.18.35 官方框架包；
+
+2、提供了web、h5多操作端共用一个框架包的后端架构；
+
+3、封装或改写了一些常用的组件。
+
+  
